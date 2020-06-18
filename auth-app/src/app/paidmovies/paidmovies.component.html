@@ -1,0 +1,14 @@
+<div class="row mt-5">
+    <div class="col-md-4 mb-3" *ngFor="let movie of paidMovies">
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">{{movie.name}}</h5>
+          <p class="card-text">{{movie.description}}</p>
+          <a href="#" class="btn btn-success">Watch Movie</a>
+        </div>
+        <div class="card-footer text-muted">
+          Available Until: {{movie.date | date:'shortDate'}}
+        </div>
+      </div>
+    </div>
+  </div>
